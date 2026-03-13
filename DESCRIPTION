@@ -1,6 +1,6 @@
 Package: CCPlotR
 Title: Plots For Visualising Cell-Cell Interactions
-Version: 0.99.3
+Version: 0.99.4
 Authors@R: c(
     person("Sarah", "Ennis", email = "ennissarah94@gmail.com", role = c("aut", "cre"), 
            comment = c(ORCID = "0000-0001-6100-8573")),
@@ -20,7 +20,6 @@ Imports:
     ComplexHeatmap,
     tibble,
     grid,
-    ggbump,
     stringr,
     ggtext,
     ggh4x,
@@ -38,7 +37,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: false
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.3
 Suggests: 
     knitr,
     rmarkdown,

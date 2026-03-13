@@ -99,7 +99,7 @@ cc_circos <- function(cc_df, option = "A", n_top_ints = 15, exp_df = NULL, cell_
                 )
             }, bg.border = NA)
             for (l in unique(str_extract(segments, "[^|]+"))) {
-                highlight.sector(segments[str_detect(segments, paste0("^", l))], track.index = 2, col = cell_cols[l])
+                highlight.sector(segments[str_detect(segments, paste0("^", str_escape(l)))], track.index = 2, col = cell_cols[l])
             }
             if (show_legend == TRUE) {
                 draw(lgd, just = c("left", "bottom"), x = unit(5, "mm"), y = unit(5, "mm"))
@@ -167,7 +167,7 @@ cc_circos <- function(cc_df, option = "A", n_top_ints = 15, exp_df = NULL, cell_
                 )
             }, bg.border = NA)
             for (l in unique(str_extract(segments, "[^|]+"))) {
-                highlight.sector(segments[str_detect(segments, paste0("^", l))], track.index = 2, col = cell_cols[l])
+                highlight.sector(segments[str_detect(segments, paste0("^", str_escape(l)))], track.index = 2, col = cell_cols[l])
             }
             circos.track(track.index = 3, panel.fun = function(x, y) {
                 circos.rect(CELL_META$xlim[1], CELL_META$ylim[1], CELL_META$xlim[2], CELL_META$ylim[2],

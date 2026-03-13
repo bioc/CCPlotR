@@ -5,7 +5,7 @@
 #' @param n_top_ints The number of top interactions to plot.
 #' @param colours A named vector of colours for each cell type. Default is `paletteMartin()`, a colourblind-friendly palette.
 #' @export
-#' @import dplyr ggplot2 ggbump stringr
+#' @import dplyr ggplot2 stringr
 #' @importFrom methods is
 #' @return Returns a plot generated with the ggplot2 package
 #' @examples
